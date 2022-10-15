@@ -1,0 +1,3 @@
+import 'controller/comments_container_controller.dart';import 'package:flutter/material.dart';import 'package:tuber/core/app_export.dart';import 'package:tuber/widgets/custom_bottom_bar.dart';class CommentsContainerScreen extends GetWidget<CommentsContainerController> {@override Widget build(BuildContext context) { return SafeArea(child: Scaffold(backgroundColor: ColorConstant.gray50, body: Obx(() => getCurrentWidget(controller.type.value)), bottomNavigationBar: CustomBottomBar(onChanged: (BottomBarEnum type) {controller.type.value = type;}))); } 
+Widget getCurrentWidget(BottomBarEnum type) { switch (type) {case BottomBarEnum.Yourmessage: return getDefaultWidget(); default: return getDefaultWidget();} } 
+ }

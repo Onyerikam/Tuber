@@ -1,0 +1,1 @@
+class ListprofileimglargOne1ItemModel { }
